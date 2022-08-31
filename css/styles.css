@@ -29,6 +29,11 @@ ul {
 		margin: 0;
 		list-style: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -44,9 +49,6 @@ ul {
 .section.no-padding {
 	  padding-top: 0;
 }
-.card-image.no-gap {
-	display: block;
-}
 h2 {
 		margin-bottom: 50px;
     font-size: 36px;
@@ -54,7 +56,16 @@ h2 {
     text-align: center;
 }
 .titlle-transparent {
-	display: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* Button */
@@ -94,7 +105,7 @@ h2 {
 .headernav {
     border-bottom: 1px solid #ECECEC;
   }
-	.main-nav {
+.main-nav {
 		display: flex;
 	}
 .logo {
@@ -155,6 +166,18 @@ h2 {
 .contact-nav:focus,
 .contact-nav:active {
     color: var(--accent-color);
+}
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-icon:hover,
+.contact-icon:focus,
+.contact-icon:active {
+  fill: currentColor;
+}
+.nav .item-contact+.item-contact {
+  margin-left: 30px;
 }
 
 /* Main */
@@ -277,8 +300,8 @@ h2 {
 	margin-left: 30px;
 }
 .team-content {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	line-height: 1.17;
 }
 .team-titlle {
@@ -290,29 +313,61 @@ h2 {
 	  font-size: 16px;
     color: var(--fundamental-text-color);
 }
+.social {
+  margin-top: 16px;
+    display: flex;
+    justify-content:center;
+}
+.social > li + li {
+  margin-left: 10px;
+    
+}
+.social-link {
+  color: #fff;
+  fill: #AFB1B8;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-color);
+  fill: #fff;
+}
+.social-icon {
+  display: block;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+.social-icon:hover,
+.social-icon:focus {
+  background-color: currentColor;
+}
+
 /* Client */
 .client {
   display: flex;
-  text-align: center;
 }
-.client .item {
-  width: 170px;
-  padding: 16px 32px 16px 32px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.client .item+.item {
+.client > li+li {
   margin-left: 30px;
 }
-.client .item:hover,
-.client .item:active {
-  border: 1px solid #2196F3;
+.client-link {
+  color: #afb1b8;
 }
-.client .item::before {
-  content: ;
-  width: 106px;
-  height: 60px;
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+}
+.client-icon {
+  display: block;
+   width: 170px;
+   height: 92px;
+   fill: currentColor;
+   padding: 16px 32px 16px 32px;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px; 
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: currentColor;
+  border: 1px solid #2196F3;
 }
 
 /* Project */
@@ -365,6 +420,18 @@ h2 {
 	  padding: 60px 0;
     background-color: var(--accent-white-color);
 }
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.column {
+  margin-right: 70px;
+}
 .footer .logo {
     color: var(--sub-text-color);
 }
@@ -386,7 +453,56 @@ h2 {
     text-decoration: none;
     color: var(--sub-text-color);
 }
-.footer-contact:hover,.footer-map:hover,
+.footer-contact:hover, .footer-map:hover,
 .footer-contact:focus, .footer-map:focus {
     color: var(--accent-color);
 }
+.h2-footer {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+}
+.social-footer {
+    display: flex;
+    justify-content: center;
+}
+.social-footer>li+li {
+    margin-left: 10px;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus,
+.footer-link:active {
+    color: var(--accent-color);
+}
+.footer-icon {
+    display: block;
+    fill: #fff;
+    background-color: currentColor;
+    border-radius: 50%;
+}
+.footer-icon:hover,
+.footer-icon:focus,
+.footer-icon:active {
+    background-color: currentColor;
+    fill: #fff;
+}
+
+/*  скрываем заголовок
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */

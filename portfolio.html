@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
     <!-- Підключаємо стилі -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 </head>
 
 <body>
@@ -22,15 +23,22 @@
       <a href="./index.html" class="logo"><span>Web</span>Studio</a>
       <!-- Меню -->
       <ul class="nav">
-        <li class="item"><a href="./index.html" class="site-nav--active">Студія</a></li>
-        <li class="item"><a href="./portfolio.html" class="site-nav">Портфоліо</a></li>
+        <li class="item"><a href="./index.html" class="site-nav">Студія</a></li>
+        <li class="item"><a href="./portfolio.html" class="site-nav--active">Портфоліо</a></li>
         <li class="item"><a href="" class="site-nav">Контакти</a></li>
       </ul>
     </nav>
     <!-- Контакти -->
     <ul class="nav auth">
-      <li class="item"><a href="mailto:info@devstudio.com" class="contact-nav">info@devstudio.com</a></li>
-      <li class="item"><a href="tel:+380961111111" class="contact-nav">+38 096 111 11 11</a></li>
+      <li class="item-contact">
+        <a class="contact-nav" href="mailto:info@devstudio.com"><svg class="contact-icon" width="16" height="12">
+            <use href="./images/icons.svg#envelope" ></use></svg>info@devstudio.com</a>
+       </li>
+        
+      <li class="item-contact">
+      <a class="contact-nav" href="tel:+380961111111"><svg class="contact-icon" width="16" height="12">
+            <use href="./images/icons.svg#smartphone" ></use></svg>+38 096 111 11 11</a>
+          </li>
     </ul>
   </div>
 </header>
@@ -68,7 +76,7 @@
       <ul class="project">
         <!-- project 1 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-1.jpg" alt="Веб-сайт Технокряк" width="370" />
+          <img src="./images/portfolio/project-1.jpg" alt="Веб-сайт Технокряк" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Технокряк</h2>
             <p class="project-text">Веб-сайт</p>
@@ -76,7 +84,7 @@
         </li>
         <!-- project 2 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+          <img src="./images/portfolio/project-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Постер New Orlean vs Golden Star</h2>
             <p class="project-text">Дизайн</p>
@@ -84,7 +92,7 @@
         </li>
         <!-- project 3 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-3.jpg" alt="Додаток для ресторану Seafood" width="370" />
+          <img src="./images/portfolio/project-3.jpg" alt="Додаток для ресторану Seafood" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Ресторан Seafood</h2>
             <p class="project-text">Додаток</p>
@@ -92,7 +100,7 @@
         </li>
         <!-- project 4 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-4.jpg" alt="Проєкт Prime" width="370" />
+          <img src="./images/portfolio/project-4.jpg" alt="Проєкт Prime" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Проєкт Prime</h2>
             <p class="project-text">Маркетинг</p>
@@ -100,7 +108,7 @@
         </li>
         <!-- project 5 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-5.jpg" alt="Проєкт Boxes" width="370" />
+          <img src="./images/portfolio/project-5.jpg" alt="Проєкт Boxes" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Проєкт Boxes</h2>
             <p class="project-text">Додаток</p>
@@ -108,7 +116,7 @@
         </li>
         <!-- project 6 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-6.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" />
+          <img src="./images/portfolio/project-6.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Inspiration has no Borders</h2>
             <p class="project-text">Веб-сайт</p>
@@ -116,7 +124,7 @@
         </li>
         <!-- project 7 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-7.jpg" alt="Видання Limited Edition" width="370" />
+          <img src="./images/portfolio/project-7.jpg" alt="Видання Limited Edition" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Видання Limited Edition</h2>
             <p class="project-text">Дизайн</p>
@@ -124,7 +132,7 @@
         </li>
         <!-- project 8 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-8.jpg" alt="Проєкт LAB" width="370" />
+          <img src="./images/portfolio/project-8.jpg" alt="Проєкт LAB" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Проєкт LAB</h2>
             <p class="project-text">Маркетинг</p>
@@ -132,7 +140,7 @@
         </li>
         <!-- project 9 -->
         <li class="item">
-          <img class="card-image no-gap" src="./images/portfolio/project-9.jpg" alt="Додаток Growing Business" width="370" />
+          <img src="./images/portfolio/project-9.jpg" alt="Додаток Growing Business" width="370" />
           <div class="project-content">
             <h2 class="project-titlle">Growing Business</h2>
             <p class="project-text">Додаток</p>
@@ -145,22 +153,46 @@
 
 <!--Підвал-->
 <footer class="footer">
-  <div class="container">
+  <div class="container-footer">
+    <div class="column">
     <!-- Лого -->
-    <a href="./index.html" class="logo"><span>Web</span>Studio</span></a>
+    <a href="./index.html" class="logo"><span>Web</span>Studio</a>
     <!-- Адреса -->
     <address class="footer-address">
-      <a href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=uk_ua&ehbc=2E312F"
+      <a href="https://goo.gl/maps/QEQ5epvjVhX3P6UWA"
         target="_blank" rel="noopener noreferrer" class="footer-map">м. Київ, пр-т Лесі Українки, 26</a>
       <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
       <a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a>
     </address>
+    </div>
+    <div class="column">
+      <h2 class="h2-footer">приєднуйтесь</h2>
+      <ul class="social-footer">
+          <li>
+            <a class="footer-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="link to instagram"><svg class="footer-icon" width="44" height="44">
+            <use href="./images/icons.svg#instagram" ></use>
+          </svg></a>
+          </li>
+          <li><a class="footer-link" href="" target="_blank" rel="noopener noreferrer">
+          <svg class="footer-icon" width="44" height="44">
+            <use href="./images/icons.svg#twitter" ></use>
+          </svg>
+        </a></li>
+          <li><a class="footer-link" href="" target="_blank" rel="noopener noreferrer">
+          <svg class="footer-icon" width="44" height="44">
+            <use href="./images/icons.svg#facebook"></use>
+          </svg>
+        </a></li>
+          <li><a class="footer-link" href="" target="_blank" rel="noopener noreferrer">
+          <svg class="footer-icon" width="44" height="44">
+            <use href="./images/icons.svg#linkedin"></use>
+          </svg>
+        </a></li>
+        </ul> 
+    </div>
   </div>
 </footer>
-
-</body>
-
-</html>
 
 </body>
 </html>
