@@ -400,6 +400,7 @@ h2 {
 .project-content {
 	padding: 20px 24px;
 	border: 1px solid #EEEEEE;
+  border-top: none;
 }
 .project-titlle {
 	  margin-bottom: 4px;
